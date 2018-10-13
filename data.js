@@ -35,6 +35,6 @@ console.log(typeof oof);
 
 let sotp = "i know it's redundant and already tells the type but i did it anyway";
 console.log(sotp);
-console.log(typeof sotp);
+console.log(typeof sotp)
 
 // Type your code below!
