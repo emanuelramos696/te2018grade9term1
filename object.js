@@ -22,3 +22,10 @@ jean.mutant = true;
 
 console.log(jean.getInfo());
 
+let person = {
+	firstName:"jane",
+	gender: "female",
+	age: 25,
+	eyeColor: "blue"}
+
+console.log(person.firstName + person.age + person.gender + person.eyeColor);
