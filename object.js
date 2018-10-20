@@ -20,5 +20,5 @@ jean.haircolor = "orange";
 jean.power = "telekinetic";
 jean.mutant = true;
 
-
+console.log(jean.getInfo());
 
