@@ -2,11 +2,19 @@ const READLINE = require("readline-sync");
 
 // **** Problem 1: printMessage() ****
 // Write a function that prints any message you want.
+console.log("Michael is a bad coach");
 
+let message = function (){
+	console.log("Mickael is a REALLY bad coch");
 
+}
+message();
 // **** Problem 2: printFiveMessages() ****
 // Write a function that calls printMessage() five times.
-
+let nomad = function (){
+	console.log("Nevermind Mickael is a OK coach")
+}
+nomad()nomad()nomad()nomad()nomad()
 
 // **** Problem 3: getUserInput() ****
 // Write a function that asks the user if they'd like to print your message
