@@ -14,7 +14,7 @@ function withoutEnd(str) {
 }
 
 // Remove comment below to test this function.
-//testWithoutEnd();
+testWithoutEnd();
 
 /******************************************************************************
                                    frontAgain()
@@ -29,7 +29,8 @@ frontAgain("ed") → true
 
 
 function frontAgain(str) {
-
+ let firstTwo = str.substring(0,2)
+ let secondTwo = str.substring(str.length)
 }
 
 // Test this function.
