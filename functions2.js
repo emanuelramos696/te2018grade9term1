@@ -11,10 +11,20 @@ sumDouble(3, 2) → 5
 sumDouble(2, 2) → 8
 *******************************************************************************/
 
+function sumDouble(num1, num2){
+  if(num1 == num2){
+    return (num1 + num2) * 2
+    }
+
+    else{
+      return num1 + num2 
+    }
+
+  }
 
 
 // Remove comment below to test this function.
-//testSumDouble();
+testSumDouble();
 
 /******************************************************************************
                                    makes10(a, b)
@@ -27,10 +37,35 @@ makes10(9, 9) → false
 makes10(1, 9) → true
 *******************************************************************************/
 
+ function makes10(a,b){
+
+   if(a + b == 10|| (a == 10 || b == 10)){
+    
+
+    return true 
+   
+   }else{
+    return false 
+   }
+
+    function makes10(a,b){
+      if (a + b == 10){
+        return true 
+
+      }else{
+        return false
+      }
+    }
+
+
+   }
+
+
+ 
 
 
 // Remove comment below to test this function.
-//testMakes10();
+testMakes10();
 
 /******************************************************************************
                           parrotTrouble(talking, hour)
@@ -45,11 +80,19 @@ parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 *******************************************************************************/
+function parrotTrouble(talking,hour){
+  if ((hour > 20 || hour < 7) && talking) {
+    return true 
+  }else{
+   return false 
+  }
+}
+
 
 
 
 // Remove comment below to test this function.
-//testParrotTrouble();
+testParrotTrouble();
 
 /******************************************************************************
                              alarmClock(day, vacation)
@@ -65,11 +108,26 @@ alarmClock(1, false) → "7:00"
 alarmClock(6, true) → "off"
 alarmClock(0, false) → "10:00"
 *******************************************************************************/
+function alarmClock(day , onVaca){
+  if (day >= 1 && day <= 5 && (onVaca == false)){ 
+    return "7:00" 
+  }
+else if ((day == 6 || day == 0) && (onVaca == false)){
+  return "10:00"
+}
+else if ((day >= 1 && day <= 6)&& onVaca == true){
+  return "10:00"
+}
+else if ((day == 6 || day == 0)&& onVaca == true){
+ return "10:00"
+}
+
+}   
 
 
 
 // Remove comment below to test this function.
-//testAlarmClock();
+testAlarmClock();
 
 /******************************************************************************
                       caughtSpeeding(speed, isBirthday)
@@ -161,4 +219,4 @@ function testCaughtSpeeding() {
   console.log("caughtSpeeding(40, false) → 0 " + caughtSpeeding(40, false));
   console.log("caughtSpeeding(40, true) → 0 " +	caughtSpeeding(40, true));
   console.log("caughtSpeeding(90, false) → 2 " + caughtSpeeding(90, false));
-}
+} 
